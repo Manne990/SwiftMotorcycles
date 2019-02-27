@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		957508692226747E00BC905A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957508682226747E00BC905A /* AppDelegate.swift */; };
+		9575086B2226747E00BC905A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9575086A2226747E00BC905A /* ViewController.swift */; };
+		9575086E2226747E00BC905A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9575086C2226747E00BC905A /* Main.storyboard */; };
+		957508702226747F00BC905A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9575086F2226747F00BC905A /* Assets.xcassets */; };
+		957508732226747F00BC905A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 957508712226747F00BC905A /* LaunchScreen.storyboard */; };
+		9575087E2226747F00BC905A /* SwiftMotorcyclesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9575087D2226747F00BC905A /* SwiftMotorcyclesTests.swift */; };
+		957508892226747F00BC905A /* SwiftMotorcyclesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957508882226747F00BC905A /* SwiftMotorcyclesUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9575087A2226747F00BC905A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9575085D2226747E00BC905A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 957508642226747E00BC905A;
+			remoteInfo = SwiftMotorcycles;
+		};
+		957508852226747F00BC905A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9575085D2226747E00BC905A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 957508642226747E00BC905A;
+			remoteInfo = SwiftMotorcycles;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		957508652226747E00BC905A /* SwiftMotorcycles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftMotorcycles.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		957508682226747E00BC905A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9575086A2226747E00BC905A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9575086D2226747E00BC905A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9575086F2226747F00BC905A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		957508722226747F00BC905A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		957508742226747F00BC905A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		957508792226747F00BC905A /* SwiftMotorcyclesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftMotorcyclesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9575087D2226747F00BC905A /* SwiftMotorcyclesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftMotorcyclesTests.swift; sourceTree = "<group>"; };
+		9575087F2226747F00BC905A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		957508842226747F00BC905A /* SwiftMotorcyclesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftMotorcyclesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		957508882226747F00BC905A /* SwiftMotorcyclesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftMotorcyclesUITests.swift; sourceTree = "<group>"; };
+		9575088A2226747F00BC905A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		957508622226747E00BC905A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		957508762226747F00BC905A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		957508812226747F00BC905A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9575085C2226747E00BC905A = {
+			isa = PBXGroup;
+			children = (
+				957508672226747E00BC905A /* SwiftMotorcycles */,
+				9575087C2226747F00BC905A /* SwiftMotorcyclesTests */,
+				957508872226747F00BC905A /* SwiftMotorcyclesUITests */,
+				957508662226747E00BC905A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		957508662226747E00BC905A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				957508652226747E00BC905A /* SwiftMotorcycles.app */,
+				957508792226747F00BC905A /* SwiftMotorcyclesTests.xctest */,
+				957508842226747F00BC905A /* SwiftMotorcyclesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		957508672226747E00BC905A /* SwiftMotorcycles */ = {
+			isa = PBXGroup;
+			children = (
+				957508682226747E00BC905A /* AppDelegate.swift */,
+				9575086A2226747E00BC905A /* ViewController.swift */,
+				9575086C2226747E00BC905A /* Main.storyboard */,
+				9575086F2226747F00BC905A /* Assets.xcassets */,
+				957508712226747F00BC905A /* LaunchScreen.storyboard */,
+				957508742226747F00BC905A /* Info.plist */,
+			);
+			path = SwiftMotorcycles;
+			sourceTree = "<group>";
+		};
+		9575087C2226747F00BC905A /* SwiftMotorcyclesTests */ = {
+			isa = PBXGroup;
+			children = (
+				9575087D2226747F00BC905A /* SwiftMotorcyclesTests.swift */,
+				9575087F2226747F00BC905A /* Info.plist */,
+			);
+			path = SwiftMotorcyclesTests;
+			sourceTree = "<group>";
+		};
+		957508872226747F00BC905A /* SwiftMotorcyclesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				957508882226747F00BC905A /* SwiftMotorcyclesUITests.swift */,
+				9575088A2226747F00BC905A /* Info.plist */,
+			);
+			path = SwiftMotorcyclesUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		957508642226747E00BC905A /* SwiftMotorcycles */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9575088D2226747F00BC905A /* Build configuration list for PBXNativeTarget "SwiftMotorcycles" */;
+			buildPhases = (
+				957508612226747E00BC905A /* Sources */,
+				957508622226747E00BC905A /* Frameworks */,
+				957508632226747E00BC905A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftMotorcycles;
+			productName = SwiftMotorcycles;
+			productReference = 957508652226747E00BC905A /* SwiftMotorcycles.app */;
+			productType = "com.apple.product-type.application";
+		};
+		957508782226747F00BC905A /* SwiftMotorcyclesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 957508902226747F00BC905A /* Build configuration list for PBXNativeTarget "SwiftMotorcyclesTests" */;
+			buildPhases = (
+				957508752226747F00BC905A /* Sources */,
+				957508762226747F00BC905A /* Frameworks */,
+				957508772226747F00BC905A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9575087B2226747F00BC905A /* PBXTargetDependency */,
+			);
+			name = SwiftMotorcyclesTests;
+			productName = SwiftMotorcyclesTests;
+			productReference = 957508792226747F00BC905A /* SwiftMotorcyclesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		957508832226747F00BC905A /* SwiftMotorcyclesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 957508932226747F00BC905A /* Build configuration list for PBXNativeTarget "SwiftMotorcyclesUITests" */;
+			buildPhases = (
+				957508802226747F00BC905A /* Sources */,
+				957508812226747F00BC905A /* Frameworks */,
+				957508822226747F00BC905A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				957508862226747F00BC905A /* PBXTargetDependency */,
+			);
+			name = SwiftMotorcyclesUITests;
+			productName = SwiftMotorcyclesUITests;
+			productReference = 957508842226747F00BC905A /* SwiftMotorcyclesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9575085D2226747E00BC905A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Jonas Frid";
+				TargetAttributes = {
+					957508642226747E00BC905A = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					957508782226747F00BC905A = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 957508642226747E00BC905A;
+					};
+					957508832226747F00BC905A = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 957508642226747E00BC905A;
+					};
+				};
+			};
+			buildConfigurationList = 957508602226747E00BC905A /* Build configuration list for PBXProject "SwiftMotorcycles" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9575085C2226747E00BC905A;
+			productRefGroup = 957508662226747E00BC905A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				957508642226747E00BC905A /* SwiftMotorcycles */,
+				957508782226747F00BC905A /* SwiftMotorcyclesTests */,
+				957508832226747F00BC905A /* SwiftMotorcyclesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		957508632226747E00BC905A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				957508732226747F00BC905A /* LaunchScreen.storyboard in Resources */,
+				957508702226747F00BC905A /* Assets.xcassets in Resources */,
+				9575086E2226747E00BC905A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		957508772226747F00BC905A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		957508822226747F00BC905A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		957508612226747E00BC905A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9575086B2226747E00BC905A /* ViewController.swift in Sources */,
+				957508692226747E00BC905A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		957508752226747F00BC905A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9575087E2226747F00BC905A /* SwiftMotorcyclesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		957508802226747F00BC905A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				957508892226747F00BC905A /* SwiftMotorcyclesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9575087B2226747F00BC905A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 957508642226747E00BC905A /* SwiftMotorcycles */;
+			targetProxy = 9575087A2226747F00BC905A /* PBXContainerItemProxy */;
+		};
+		957508862226747F00BC905A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 957508642226747E00BC905A /* SwiftMotorcycles */;
+			targetProxy = 957508852226747F00BC905A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9575086C2226747E00BC905A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9575086D2226747E00BC905A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		957508712226747F00BC905A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				957508722226747F00BC905A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9575088B2226747F00BC905A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9575088C2226747F00BC905A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9575088E2226747F00BC905A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VTHEP2B7UP;
+				INFOPLIST_FILE = SwiftMotorcycles/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = se.idoapps.SwiftMotorcycles;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9575088F2226747F00BC905A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VTHEP2B7UP;
+				INFOPLIST_FILE = SwiftMotorcycles/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = se.idoapps.SwiftMotorcycles;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		957508912226747F00BC905A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VTHEP2B7UP;
+				INFOPLIST_FILE = SwiftMotorcyclesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = se.idoapps.SwiftMotorcyclesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftMotorcycles.app/SwiftMotorcycles";
+			};
+			name = Debug;
+		};
+		957508922226747F00BC905A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VTHEP2B7UP;
+				INFOPLIST_FILE = SwiftMotorcyclesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = se.idoapps.SwiftMotorcyclesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftMotorcycles.app/SwiftMotorcycles";
+			};
+			name = Release;
+		};
+		957508942226747F00BC905A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VTHEP2B7UP;
+				INFOPLIST_FILE = SwiftMotorcyclesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = se.idoapps.SwiftMotorcyclesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SwiftMotorcycles;
+			};
+			name = Debug;
+		};
+		957508952226747F00BC905A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VTHEP2B7UP;
+				INFOPLIST_FILE = SwiftMotorcyclesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = se.idoapps.SwiftMotorcyclesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SwiftMotorcycles;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		957508602226747E00BC905A /* Build configuration list for PBXProject "SwiftMotorcycles" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9575088B2226747F00BC905A /* Debug */,
+				9575088C2226747F00BC905A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9575088D2226747F00BC905A /* Build configuration list for PBXNativeTarget "SwiftMotorcycles" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9575088E2226747F00BC905A /* Debug */,
+				9575088F2226747F00BC905A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		957508902226747F00BC905A /* Build configuration list for PBXNativeTarget "SwiftMotorcyclesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				957508912226747F00BC905A /* Debug */,
+				957508922226747F00BC905A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		957508932226747F00BC905A /* Build configuration list for PBXNativeTarget "SwiftMotorcyclesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				957508942226747F00BC905A /* Debug */,
+				957508952226747F00BC905A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9575085D2226747E00BC905A /* Project object */;
+}
