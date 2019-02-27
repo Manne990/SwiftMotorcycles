@@ -14,6 +14,10 @@
 		957508732226747F00BC905A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 957508712226747F00BC905A /* LaunchScreen.storyboard */; };
 		9575087E2226747F00BC905A /* SwiftMotorcyclesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9575087D2226747F00BC905A /* SwiftMotorcyclesTests.swift */; };
 		957508892226747F00BC905A /* SwiftMotorcyclesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957508882226747F00BC905A /* SwiftMotorcyclesUITests.swift */; };
+		957508992226799900BC905A /* Motorcycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957508982226799900BC905A /* Motorcycle.swift */; };
+		9575089B22267A5D00BC905A /* ContainerBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9575089A22267A5D00BC905A /* ContainerBase.swift */; };
+		9575089D22267AF600BC905A /* Containers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9575089C22267AF600BC905A /* Containers.swift */; };
+		957508A22226852B00BC905A /* ClassBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957508A12226852B00BC905A /* ClassBase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		957508842226747F00BC905A /* SwiftMotorcyclesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftMotorcyclesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		957508882226747F00BC905A /* SwiftMotorcyclesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftMotorcyclesUITests.swift; sourceTree = "<group>"; };
 		9575088A2226747F00BC905A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		957508982226799900BC905A /* Motorcycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Motorcycle.swift; sourceTree = "<group>"; };
+		9575089A22267A5D00BC905A /* ContainerBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerBase.swift; sourceTree = "<group>"; };
+		9575089C22267AF600BC905A /* Containers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Containers.swift; sourceTree = "<group>"; };
+		957508A12226852B00BC905A /* ClassBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassBase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +105,10 @@
 		957508672226747E00BC905A /* SwiftMotorcycles */ = {
 			isa = PBXGroup;
 			children = (
+				9575089E222684BE00BC905A /* Common */,
+				95750897222678E600BC905A /* View */,
+				95750896222678D300BC905A /* Model */,
 				957508682226747E00BC905A /* AppDelegate.swift */,
-				9575086A2226747E00BC905A /* ViewController.swift */,
-				9575086C2226747E00BC905A /* Main.storyboard */,
 				9575086F2226747F00BC905A /* Assets.xcassets */,
 				957508712226747F00BC905A /* LaunchScreen.storyboard */,
 				957508742226747F00BC905A /* Info.plist */,
@@ -123,6 +132,33 @@
 				9575088A2226747F00BC905A /* Info.plist */,
 			);
 			path = SwiftMotorcyclesUITests;
+			sourceTree = "<group>";
+		};
+		95750896222678D300BC905A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				957508982226799900BC905A /* Motorcycle.swift */,
+				9575089A22267A5D00BC905A /* ContainerBase.swift */,
+				9575089C22267AF600BC905A /* Containers.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		95750897222678E600BC905A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9575086C2226747E00BC905A /* Main.storyboard */,
+				9575086A2226747E00BC905A /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9575089E222684BE00BC905A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				957508A12226852B00BC905A /* ClassBase.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +292,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9575089B22267A5D00BC905A /* ContainerBase.swift in Sources */,
+				957508A22226852B00BC905A /* ClassBase.swift in Sources */,
 				9575086B2226747E00BC905A /* ViewController.swift in Sources */,
+				9575089D22267AF600BC905A /* Containers.swift in Sources */,
+				957508992226799900BC905A /* Motorcycle.swift in Sources */,
 				957508692226747E00BC905A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
