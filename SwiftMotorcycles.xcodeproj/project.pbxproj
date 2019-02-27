@@ -34,7 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		957508652226747E00BC905A /* SwiftMotorcycles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftMotorcycles.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		957508652226747E00BC905A /* Motorcycles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Motorcycles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		957508682226747E00BC905A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9575086A2226747E00BC905A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9575086D2226747E00BC905A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -87,7 +87,7 @@
 		957508662226747E00BC905A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				957508652226747E00BC905A /* SwiftMotorcycles.app */,
+				957508652226747E00BC905A /* Motorcycles.app */,
 				957508792226747F00BC905A /* SwiftMotorcyclesTests.xctest */,
 				957508842226747F00BC905A /* SwiftMotorcyclesUITests.xctest */,
 			);
@@ -142,7 +142,7 @@
 			);
 			name = SwiftMotorcycles;
 			productName = SwiftMotorcycles;
-			productReference = 957508652226747E00BC905A /* SwiftMotorcycles.app */;
+			productReference = 957508652226747E00BC905A /* Motorcycles.app */;
 			productType = "com.apple.product-type.application";
 		};
 		957508782226747F00BC905A /* SwiftMotorcyclesTests */ = {
@@ -435,14 +435,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VTHEP2B7UP;
 				INFOPLIST_FILE = SwiftMotorcycles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = se.idoapps.SwiftMotorcycles;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = se.idoapps.motorcycles;
+				PRODUCT_NAME = Motorcycles;
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -453,14 +454,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VTHEP2B7UP;
 				INFOPLIST_FILE = SwiftMotorcycles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = se.idoapps.SwiftMotorcycles;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = se.idoapps.motorcycles;
+				PRODUCT_NAME = Motorcycles;
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
