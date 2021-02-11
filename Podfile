@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+platform :ios, '10.0'
 
 target 'SwiftMotorcycles' do
   # Comment the next line if you don't want to use dynamic frameworks
@@ -7,6 +7,8 @@ target 'SwiftMotorcycles' do
 
   # Pods for SwiftMotorcycles
   pod 'Alamofire', '~> 5.2'
+  pod 'Swinject'
+  pod 'SwinjectStoryboard'
 
   target 'SwiftMotorcyclesTests' do
     inherit! :search_paths

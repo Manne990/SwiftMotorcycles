@@ -17,7 +17,7 @@ protocol MotorcyclesViewModelProtocol {
 }
 
 class MotorcyclesViewModel : MotorcyclesViewModelProtocol {
-    private let ws: WebServiceProtocol
+    private let webService: WebServiceProtocol?
     
     var propertyChanged: (String) -> Void = {propertyName in } // REMARK: Is this a good way to do it in Swift?
     
@@ -30,12 +30,12 @@ class MotorcyclesViewModel : MotorcyclesViewModelProtocol {
         }
     }
     
-    init(ws: WebServiceProtocol) {
-        self.ws = ws
+    init(webService: WebServiceProtocol?) {
+        self.webService = webService
     }
     
     func loadMotorcycles() {
-        ws.getMotorcycles{ (result) in
+        webService?.getMotorcycles{ (result) in
             guard result.success else {
                 self.motorcycles = nil
                 return

@@ -10,12 +10,12 @@ import Foundation
 import Alamofire
 
 protocol WebServiceProtocol {
-    func getMotorcycles(completion: @escaping (Container<[Motorcycle]>) -> Void)
+    func getMotorcycles(completion: @escaping (WebResponse<[Motorcycle]>) -> Void)
 }
 
 class WebService : WebServiceProtocol {
-    func getMotorcycles(completion: @escaping (Container<[Motorcycle]>) -> Void) {
-        var result = Container<[Motorcycle]>(success: false, data: nil)
+    func getMotorcycles(completion: @escaping (WebResponse<[Motorcycle]>) -> Void) {
+        var result = WebResponse<[Motorcycle]>(success: false, data: nil)
         
         //TODO: Add error handling
         

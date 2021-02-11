@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Container<T> {
+struct WebResponse<T> {
     var success: Bool
     var data: T?
 }
