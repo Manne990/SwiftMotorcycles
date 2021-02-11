@@ -12,10 +12,7 @@ protocol ContainerProtocol {
     var success: Bool {get set}
 }
 
-class ContainerBase: ClassBase, ContainerProtocol {
+struct Container<T>: ContainerProtocol {
     var success: Bool
-    
-    init(success: Bool) {
-        self.success = success
-    }
+    var data: T?
 }

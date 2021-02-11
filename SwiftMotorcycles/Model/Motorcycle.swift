@@ -8,20 +8,16 @@
 
 import Foundation
 
-class Motorcycle: ClassBase {
-    var objectId: String
-    var brand: String
-    var model: String
-    var year: Int
+struct Motorcycle: Decodable {
+    public let objectId: String
+    public let brand: String
+    public let model: String
+    public let year: Int
     
-    init(objectId: String, brand: String, model: String, year: Int) {
-        self.objectId = objectId
-        self.brand = brand
-        self.model = model
-        self.year = year
-    }
-    
-    convenience override init() {
-        self.init(objectId: "", brand: "", model: "", year: 0)
+    enum CodingKeys: String, CodingKey {
+        case objectId
+        case brand
+        case model
+        case year
     }
 }

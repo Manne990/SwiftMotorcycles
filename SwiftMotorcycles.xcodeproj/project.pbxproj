@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		270A0320C9A67B492078B145 /* Pods_SwiftMotorcycles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A7E0B07C5C6B02920447DBA /* Pods_SwiftMotorcycles.framework */; };
 		957508692226747E00BC905A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957508682226747E00BC905A /* AppDelegate.swift */; };
 		9575086B2226747E00BC905A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9575086A2226747E00BC905A /* ViewController.swift */; };
 		9575086E2226747E00BC905A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9575086C2226747E00BC905A /* Main.storyboard */; };
@@ -15,9 +16,11 @@
 		9575087E2226747F00BC905A /* SwiftMotorcyclesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9575087D2226747F00BC905A /* SwiftMotorcyclesTests.swift */; };
 		957508892226747F00BC905A /* SwiftMotorcyclesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957508882226747F00BC905A /* SwiftMotorcyclesUITests.swift */; };
 		957508992226799900BC905A /* Motorcycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957508982226799900BC905A /* Motorcycle.swift */; };
-		9575089B22267A5D00BC905A /* ContainerBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9575089A22267A5D00BC905A /* ContainerBase.swift */; };
-		9575089D22267AF600BC905A /* Containers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9575089C22267AF600BC905A /* Containers.swift */; };
-		957508A22226852B00BC905A /* ClassBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957508A12226852B00BC905A /* ClassBase.swift */; };
+		9575089B22267A5D00BC905A /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9575089A22267A5D00BC905A /* Container.swift */; };
+		D0229EE125D5667E0044448B /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0229EE025D5667E0044448B /* Configuration.swift */; };
+		D0229EE725D567050044448B /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0229EE625D567050044448B /* WebService.swift */; };
+		EFFF7CDA204EA33192110502 /* Pods_SwiftMotorcycles_SwiftMotorcyclesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E501FA2507BFC2644D86867 /* Pods_SwiftMotorcycles_SwiftMotorcyclesUITests.framework */; };
+		FA0AE3B222B757C94FF0FBCD /* Pods_SwiftMotorcyclesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D9A030560C36AA76FE099FF /* Pods_SwiftMotorcyclesTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		027835A7540B1149AE87C7E9 /* Pods-SwiftMotorcyclesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftMotorcyclesTests.debug.xcconfig"; path = "Target Support Files/Pods-SwiftMotorcyclesTests/Pods-SwiftMotorcyclesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0D9A030560C36AA76FE099FF /* Pods_SwiftMotorcyclesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftMotorcyclesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		176BCFF32211AD395B867376 /* Pods-SwiftMotorcycles-SwiftMotorcyclesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftMotorcycles-SwiftMotorcyclesUITests.release.xcconfig"; path = "Target Support Files/Pods-SwiftMotorcycles-SwiftMotorcyclesUITests/Pods-SwiftMotorcycles-SwiftMotorcyclesUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1AAD7EC140455439DA7F0848 /* Pods-SwiftMotorcycles.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftMotorcycles.release.xcconfig"; path = "Target Support Files/Pods-SwiftMotorcycles/Pods-SwiftMotorcycles.release.xcconfig"; sourceTree = "<group>"; };
+		3AE7FADDDB9492F1B0BAB60C /* Pods-SwiftMotorcycles-SwiftMotorcyclesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftMotorcycles-SwiftMotorcyclesUITests.debug.xcconfig"; path = "Target Support Files/Pods-SwiftMotorcycles-SwiftMotorcyclesUITests/Pods-SwiftMotorcycles-SwiftMotorcyclesUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5E501FA2507BFC2644D86867 /* Pods_SwiftMotorcycles_SwiftMotorcyclesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftMotorcycles_SwiftMotorcyclesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A7E0B07C5C6B02920447DBA /* Pods_SwiftMotorcycles.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftMotorcycles.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		957508652226747E00BC905A /* Motorcycles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Motorcycles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		957508682226747E00BC905A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9575086A2226747E00BC905A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -52,9 +62,11 @@
 		957508882226747F00BC905A /* SwiftMotorcyclesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftMotorcyclesUITests.swift; sourceTree = "<group>"; };
 		9575088A2226747F00BC905A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		957508982226799900BC905A /* Motorcycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Motorcycle.swift; sourceTree = "<group>"; };
-		9575089A22267A5D00BC905A /* ContainerBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerBase.swift; sourceTree = "<group>"; };
-		9575089C22267AF600BC905A /* Containers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Containers.swift; sourceTree = "<group>"; };
-		957508A12226852B00BC905A /* ClassBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassBase.swift; sourceTree = "<group>"; };
+		9575089A22267A5D00BC905A /* Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
+		B1520A579CDDC00F8CD083E3 /* Pods-SwiftMotorcyclesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftMotorcyclesTests.release.xcconfig"; path = "Target Support Files/Pods-SwiftMotorcyclesTests/Pods-SwiftMotorcyclesTests.release.xcconfig"; sourceTree = "<group>"; };
+		D0229EE025D5667E0044448B /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		D0229EE625D567050044448B /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		D7AA7368D4E88C8E566CBB8A /* Pods-SwiftMotorcycles.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftMotorcycles.debug.xcconfig"; path = "Target Support Files/Pods-SwiftMotorcycles/Pods-SwiftMotorcycles.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				270A0320C9A67B492078B145 /* Pods_SwiftMotorcycles.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA0AE3B222B757C94FF0FBCD /* Pods_SwiftMotorcyclesTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,12 +90,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFFF7CDA204EA33192110502 /* Pods_SwiftMotorcycles_SwiftMotorcyclesUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		154451DC261F22BAAD0A2520 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D7AA7368D4E88C8E566CBB8A /* Pods-SwiftMotorcycles.debug.xcconfig */,
+				1AAD7EC140455439DA7F0848 /* Pods-SwiftMotorcycles.release.xcconfig */,
+				3AE7FADDDB9492F1B0BAB60C /* Pods-SwiftMotorcycles-SwiftMotorcyclesUITests.debug.xcconfig */,
+				176BCFF32211AD395B867376 /* Pods-SwiftMotorcycles-SwiftMotorcyclesUITests.release.xcconfig */,
+				027835A7540B1149AE87C7E9 /* Pods-SwiftMotorcyclesTests.debug.xcconfig */,
+				B1520A579CDDC00F8CD083E3 /* Pods-SwiftMotorcyclesTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		73E975A2B8CB8E4D6496D71A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A7E0B07C5C6B02920447DBA /* Pods_SwiftMotorcycles.framework */,
+				5E501FA2507BFC2644D86867 /* Pods_SwiftMotorcycles_SwiftMotorcyclesUITests.framework */,
+				0D9A030560C36AA76FE099FF /* Pods_SwiftMotorcyclesTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9575085C2226747E00BC905A = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +127,8 @@
 				9575087C2226747F00BC905A /* SwiftMotorcyclesTests */,
 				957508872226747F00BC905A /* SwiftMotorcyclesUITests */,
 				957508662226747E00BC905A /* Products */,
+				154451DC261F22BAAD0A2520 /* Pods */,
+				73E975A2B8CB8E4D6496D71A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,8 +146,9 @@
 			isa = PBXGroup;
 			children = (
 				9575089E222684BE00BC905A /* Common */,
-				95750897222678E600BC905A /* View */,
 				95750896222678D300BC905A /* Model */,
+				95750897222678E600BC905A /* View */,
+				D0229EE525D566DF0044448B /* Service */,
 				957508682226747E00BC905A /* AppDelegate.swift */,
 				9575086F2226747F00BC905A /* Assets.xcassets */,
 				957508712226747F00BC905A /* LaunchScreen.storyboard */,
@@ -138,8 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				957508982226799900BC905A /* Motorcycle.swift */,
-				9575089A22267A5D00BC905A /* ContainerBase.swift */,
-				9575089C22267AF600BC905A /* Containers.swift */,
+				9575089A22267A5D00BC905A /* Container.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -156,9 +196,17 @@
 		9575089E222684BE00BC905A /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				957508A12226852B00BC905A /* ClassBase.swift */,
+				D0229EE025D5667E0044448B /* Configuration.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		D0229EE525D566DF0044448B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				D0229EE625D567050044448B /* WebService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,9 +216,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9575088D2226747F00BC905A /* Build configuration list for PBXNativeTarget "SwiftMotorcycles" */;
 			buildPhases = (
+				8D014A1481B4070D2A40C4A4 /* [CP] Check Pods Manifest.lock */,
 				957508612226747E00BC905A /* Sources */,
 				957508622226747E00BC905A /* Frameworks */,
 				957508632226747E00BC905A /* Resources */,
+				03A512B98DBEF42F5821BA0D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -185,6 +235,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 957508902226747F00BC905A /* Build configuration list for PBXNativeTarget "SwiftMotorcyclesTests" */;
 			buildPhases = (
+				0D783B27DBD14B3E706C12EF /* [CP] Check Pods Manifest.lock */,
 				957508752226747F00BC905A /* Sources */,
 				957508762226747F00BC905A /* Frameworks */,
 				957508772226747F00BC905A /* Resources */,
@@ -203,9 +254,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 957508932226747F00BC905A /* Build configuration list for PBXNativeTarget "SwiftMotorcyclesUITests" */;
 			buildPhases = (
+				896A543BB49BB04D0F79A425 /* [CP] Check Pods Manifest.lock */,
 				957508802226747F00BC905A /* Sources */,
 				957508812226747F00BC905A /* Frameworks */,
 				957508822226747F00BC905A /* Resources */,
+				A4B57EB4477980B235C6B265 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -287,15 +340,118 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		03A512B98DBEF42F5821BA0D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftMotorcycles/Pods-SwiftMotorcycles-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftMotorcycles/Pods-SwiftMotorcycles-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftMotorcycles/Pods-SwiftMotorcycles-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0D783B27DBD14B3E706C12EF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftMotorcyclesTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		896A543BB49BB04D0F79A425 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftMotorcycles-SwiftMotorcyclesUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D014A1481B4070D2A40C4A4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftMotorcycles-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4B57EB4477980B235C6B265 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftMotorcycles-SwiftMotorcyclesUITests/Pods-SwiftMotorcycles-SwiftMotorcyclesUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftMotorcycles-SwiftMotorcyclesUITests/Pods-SwiftMotorcycles-SwiftMotorcyclesUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftMotorcycles-SwiftMotorcyclesUITests/Pods-SwiftMotorcycles-SwiftMotorcyclesUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		957508612226747E00BC905A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9575089B22267A5D00BC905A /* ContainerBase.swift in Sources */,
-				957508A22226852B00BC905A /* ClassBase.swift in Sources */,
+				9575089B22267A5D00BC905A /* Container.swift in Sources */,
+				D0229EE725D567050044448B /* WebService.swift in Sources */,
+				D0229EE125D5667E0044448B /* Configuration.swift in Sources */,
 				9575086B2226747E00BC905A /* ViewController.swift in Sources */,
-				9575089D22267AF600BC905A /* Containers.swift in Sources */,
 				957508992226799900BC905A /* Motorcycle.swift in Sources */,
 				957508692226747E00BC905A /* AppDelegate.swift in Sources */,
 			);
@@ -470,6 +626,7 @@
 		};
 		9575088E2226747F00BC905A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7AA7368D4E88C8E566CBB8A /* Pods-SwiftMotorcycles.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -489,6 +646,7 @@
 		};
 		9575088F2226747F00BC905A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AAD7EC140455439DA7F0848 /* Pods-SwiftMotorcycles.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -508,6 +666,7 @@
 		};
 		957508912226747F00BC905A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 027835A7540B1149AE87C7E9 /* Pods-SwiftMotorcyclesTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -529,6 +688,7 @@
 		};
 		957508922226747F00BC905A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1520A579CDDC00F8CD083E3 /* Pods-SwiftMotorcyclesTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -550,6 +710,7 @@
 		};
 		957508942226747F00BC905A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AE7FADDDB9492F1B0BAB60C /* Pods-SwiftMotorcycles-SwiftMotorcyclesUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -570,6 +731,7 @@
 		};
 		957508952226747F00BC905A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 176BCFF32211AD395B867376 /* Pods-SwiftMotorcycles-SwiftMotorcyclesUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
