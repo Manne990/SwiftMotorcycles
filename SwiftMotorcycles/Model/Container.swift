@@ -8,11 +8,7 @@
 
 import Foundation
 
-protocol ContainerProtocol {
-    var success: Bool {get set}
-}
-
-struct Container<T>: ContainerProtocol {
+struct Container<T> {
     var success: Bool
     var data: T?
 }

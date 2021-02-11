@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		270A0320C9A67B492078B145 /* Pods_SwiftMotorcycles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A7E0B07C5C6B02920447DBA /* Pods_SwiftMotorcycles.framework */; };
 		957508692226747E00BC905A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957508682226747E00BC905A /* AppDelegate.swift */; };
-		9575086B2226747E00BC905A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9575086A2226747E00BC905A /* ViewController.swift */; };
 		9575086E2226747E00BC905A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9575086C2226747E00BC905A /* Main.storyboard */; };
 		957508702226747F00BC905A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9575086F2226747F00BC905A /* Assets.xcassets */; };
 		957508732226747F00BC905A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 957508712226747F00BC905A /* LaunchScreen.storyboard */; };
@@ -17,6 +16,8 @@
 		957508892226747F00BC905A /* SwiftMotorcyclesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957508882226747F00BC905A /* SwiftMotorcyclesUITests.swift */; };
 		957508992226799900BC905A /* Motorcycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957508982226799900BC905A /* Motorcycle.swift */; };
 		9575089B22267A5D00BC905A /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9575089A22267A5D00BC905A /* Container.swift */; };
+		D01BBB8725D5795400BD0A86 /* MotorcyclesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01BBB8625D5795400BD0A86 /* MotorcyclesViewModel.swift */; };
+		D01BBB9925D5858A00BD0A86 /* MotorcyclesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01BBB9825D5858A00BD0A86 /* MotorcyclesViewController.swift */; };
 		D0229EE125D5667E0044448B /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0229EE025D5667E0044448B /* Configuration.swift */; };
 		D0229EE725D567050044448B /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0229EE625D567050044448B /* WebService.swift */; };
 		EFFF7CDA204EA33192110502 /* Pods_SwiftMotorcycles_SwiftMotorcyclesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E501FA2507BFC2644D86867 /* Pods_SwiftMotorcycles_SwiftMotorcyclesUITests.framework */; };
@@ -50,7 +51,6 @@
 		6A7E0B07C5C6B02920447DBA /* Pods_SwiftMotorcycles.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftMotorcycles.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		957508652226747E00BC905A /* Motorcycles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Motorcycles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		957508682226747E00BC905A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9575086A2226747E00BC905A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9575086D2226747E00BC905A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9575086F2226747F00BC905A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		957508722226747F00BC905A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -64,6 +64,8 @@
 		957508982226799900BC905A /* Motorcycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Motorcycle.swift; sourceTree = "<group>"; };
 		9575089A22267A5D00BC905A /* Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
 		B1520A579CDDC00F8CD083E3 /* Pods-SwiftMotorcyclesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftMotorcyclesTests.release.xcconfig"; path = "Target Support Files/Pods-SwiftMotorcyclesTests/Pods-SwiftMotorcyclesTests.release.xcconfig"; sourceTree = "<group>"; };
+		D01BBB8625D5795400BD0A86 /* MotorcyclesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotorcyclesViewModel.swift; sourceTree = "<group>"; };
+		D01BBB9825D5858A00BD0A86 /* MotorcyclesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotorcyclesViewController.swift; sourceTree = "<group>"; };
 		D0229EE025D5667E0044448B /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		D0229EE625D567050044448B /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		D7AA7368D4E88C8E566CBB8A /* Pods-SwiftMotorcycles.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftMotorcycles.debug.xcconfig"; path = "Target Support Files/Pods-SwiftMotorcycles/Pods-SwiftMotorcycles.debug.xcconfig"; sourceTree = "<group>"; };
@@ -147,8 +149,9 @@
 			children = (
 				9575089E222684BE00BC905A /* Common */,
 				95750896222678D300BC905A /* Model */,
-				95750897222678E600BC905A /* View */,
 				D0229EE525D566DF0044448B /* Service */,
+				95750897222678E600BC905A /* View */,
+				D01BBB8525D5792200BD0A86 /* ViewModel */,
 				957508682226747E00BC905A /* AppDelegate.swift */,
 				9575086F2226747F00BC905A /* Assets.xcassets */,
 				957508712226747F00BC905A /* LaunchScreen.storyboard */,
@@ -178,8 +181,8 @@
 		95750896222678D300BC905A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				957508982226799900BC905A /* Motorcycle.swift */,
 				9575089A22267A5D00BC905A /* Container.swift */,
+				957508982226799900BC905A /* Motorcycle.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -188,7 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				9575086C2226747E00BC905A /* Main.storyboard */,
-				9575086A2226747E00BC905A /* ViewController.swift */,
+				D01BBB9825D5858A00BD0A86 /* MotorcyclesViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -199,6 +202,14 @@
 				D0229EE025D5667E0044448B /* Configuration.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		D01BBB8525D5792200BD0A86 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D01BBB8625D5795400BD0A86 /* MotorcyclesViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		D0229EE525D566DF0044448B /* Service */ = {
@@ -277,7 +288,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = "Jonas Frid";
 				TargetAttributes = {
 					957508642226747E00BC905A = {
@@ -451,7 +462,8 @@
 				9575089B22267A5D00BC905A /* Container.swift in Sources */,
 				D0229EE725D567050044448B /* WebService.swift in Sources */,
 				D0229EE125D5667E0044448B /* Configuration.swift in Sources */,
-				9575086B2226747E00BC905A /* ViewController.swift in Sources */,
+				D01BBB8725D5795400BD0A86 /* MotorcyclesViewModel.swift in Sources */,
+				D01BBB9925D5858A00BD0A86 /* MotorcyclesViewController.swift in Sources */,
 				957508992226799900BC905A /* Motorcycle.swift in Sources */,
 				957508692226747E00BC905A /* AppDelegate.swift in Sources */,
 			);
@@ -534,6 +546,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -595,6 +608,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -632,7 +646,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VTHEP2B7UP;
 				INFOPLIST_FILE = SwiftMotorcycles/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -652,7 +666,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VTHEP2B7UP;
 				INFOPLIST_FILE = SwiftMotorcycles/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
