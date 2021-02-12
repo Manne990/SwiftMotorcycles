@@ -17,15 +17,18 @@ class WebService : WebServiceProtocol {
     func getMotorcycles(completion: @escaping (WebResponse<[Motorcycle]>) -> Void) {
         var result = WebResponse<[Motorcycle]>(success: false, data: nil)
         
-        //TODO: Add error handling
-        
         AF
             .request("\(Configuration.baseUrl)Motorcycles")
             .validate()
             .responseDecodable(of: [Motorcycle].self) { (response) in
-                guard let motorcycles = response.value else { return }
+                guard let motorcycles = response.value else {
+                    completion(result)
+                    return
+                }
+                
                 result.success = true
                 result.data = motorcycles
+                
                 completion(result)
             }
     }
