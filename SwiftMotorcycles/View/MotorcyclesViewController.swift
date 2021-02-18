@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MotorcyclesViewController: UITableViewController {
+class MotorcyclesViewController: UITableViewController, UIAdaptivePresentationControllerDelegate, DismissProtocol {
     var viewModel: MotorcyclesViewModelProtocol?
     
     override func viewDidLoad() {
@@ -38,11 +38,22 @@ class MotorcyclesViewController: UITableViewController {
             return
         }
         
+        segue.destination.presentationController?.delegate = self
+        
         if segue.identifier == "editMotorcycle" {
             if let item = viewModel?.motorcycles?[self.tableView.indexPathForSelectedRow?.row ?? 0] {
+                nextVc.didDismissDelegate = self
                 nextVc.payloadId = item.objectId
             }
         }
+    }
+    
+    func presentationControllerDidDismiss(_ presentationController: UIPresentationController) {
+        viewModel?.loadMotorcycles()
+    }
+    
+    func didDismiss() {
+        viewModel?.loadMotorcycles()
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -62,7 +73,7 @@ class MotorcyclesViewController: UITableViewController {
         
         return cell
     }
-    
+        
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.performSegue(withIdentifier: "editMotorcycle", sender: self)
     }
