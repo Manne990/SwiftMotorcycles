@@ -51,8 +51,6 @@ class EditMotorcycleViewModel: EditMotorcycleViewModelProtocol {
     }
     
     func saveMotorcycle(completion: @escaping (Bool) -> Void) {
-        //TODO: Add validation
-        
         guard let mc = motorcycle else {
             return
         }

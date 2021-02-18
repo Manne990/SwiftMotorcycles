@@ -9,8 +9,7 @@
 import XCTest
 @testable import Pods_SwiftMotorcycles
 
-class MotorcyclesViewModelTests: XCTestCase {
-
+class EditMotorcycleViewModelTests: XCTestCase {
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
         
@@ -20,37 +19,43 @@ class MotorcyclesViewModelTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testLoadMotorcyclesSuccess() {
+    func testInitWithPayloadNew() {
         // ARRANGE
-        let subject = MotorcyclesViewModel(webService: WebServiceMock())
+        let subject = EditMotorcycleViewModel(webService: WebServiceMock())
         
         // ACT
-        subject.loadMotorcycles()
+        subject.initWithPayload(payloadId: nil)
         
         // ASSERT
-        XCTAssertEqual(1, subject.motorcycles!.count)
+        XCTAssertEqual("", subject.motorcycle?.brand)
+        XCTAssertEqual("", subject.motorcycle?.model)
+        XCTAssertEqual(0, subject.motorcycle?.year)
     }
     
-    func testLoadMotorcyclesFail() {
+    func testInitWithPayloadEdit() {
         // ARRANGE
-        let subject = MotorcyclesViewModel(webService: WebServiceMock(getMotorcyclesShouldFail: true))
+        let subject = EditMotorcycleViewModel(webService: WebServiceMock())
         
         // ACT
-        subject.loadMotorcycles()
+        subject.initWithPayload(payloadId: "1")
         
         // ASSERT
-        XCTAssertNil(subject.motorcycles)
+        XCTAssertEqual("1", subject.motorcycle?.objectId)
+        XCTAssertEqual("Honda", subject.motorcycle?.brand)
+        XCTAssertEqual("VFR800", subject.motorcycle?.model)
+        XCTAssertEqual(1999, subject.motorcycle?.year)
     }
     
-    func testDeleteMotorcycleSuccess() {
+    func testSaveMotorcycleSuccess() {
         // ARRANGE
         let exp = expectation(description: "dummy")
-        let subject = MotorcyclesViewModel(webService: WebServiceMock())
+        let subject = EditMotorcycleViewModel(webService: WebServiceMock())
         
-        subject.loadMotorcycles()
+        subject.initWithPayload(payloadId: "1")
+        subject.motorcycle?.year = 2000
         
         // ACT
-        subject.deleteMotorcycle(motorcycle: subject.motorcycles![0]) { (result) in
+        subject.saveMotorcycle { (result) in
             // ASSERT
             XCTAssertTrue(result)
             exp.fulfill()
@@ -63,15 +68,16 @@ class MotorcyclesViewModelTests: XCTestCase {
         }
     }
     
-    func testDeleteMotorcycleFail() {
+    func testSaveMotorcycleFail() {
         // ARRANGE
         let exp = expectation(description: "dummy")
-        let subject = MotorcyclesViewModel(webService: WebServiceMock(deleteMotorcycleShouldFail: true))
+        let subject = EditMotorcycleViewModel(webService: WebServiceMock(saveMotorcycleShouldFail: true))
         
-        subject.loadMotorcycles()
+        subject.initWithPayload(payloadId: "1")
+        subject.motorcycle?.year = 2000
         
         // ACT
-        subject.deleteMotorcycle(motorcycle: subject.motorcycles![0]) { (result) in
+        subject.saveMotorcycle { (result) in
             // ASSERT
             XCTAssertFalse(result)
             exp.fulfill()

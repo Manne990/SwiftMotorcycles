@@ -13,7 +13,7 @@ protocol MotorcyclesViewModelProtocol {
     var motorcycles: [Motorcycle]? {get}
     
     func loadMotorcycles()
-    func deleteMotorcycle(motorcycle: Motorcycle)
+    func deleteMotorcycle(motorcycle: Motorcycle, completion: @escaping (Bool) -> Void)
 }
 
 class MotorcyclesViewModel : MotorcyclesViewModelProtocol {
@@ -49,13 +49,10 @@ class MotorcyclesViewModel : MotorcyclesViewModelProtocol {
         }
     }
     
-    func deleteMotorcycle(motorcycle: Motorcycle) {
+    func deleteMotorcycle(motorcycle: Motorcycle, completion: @escaping (Bool) -> Void) {
         webService?.deleteMotorcycle(id: motorcycle.objectId, completion: { (result) in
-            guard result.success else {
-                return
-            }
-            
             self.loadMotorcycles()
+            completion(result.success)
         })
     }
 }

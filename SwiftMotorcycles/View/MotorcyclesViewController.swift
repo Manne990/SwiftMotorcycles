@@ -81,7 +81,7 @@ class MotorcyclesViewController: UITableViewController, UIAdaptivePresentationCo
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             if let item = viewModel?.motorcycles?[indexPath.row] {
-                viewModel?.deleteMotorcycle(motorcycle: item)
+                viewModel?.deleteMotorcycle(motorcycle: item, completion: { (success) in })
             }
         }
     }
