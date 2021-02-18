@@ -39,10 +39,10 @@ class MotorcyclesViewController: UITableViewController, UIAdaptivePresentationCo
         }
         
         segue.destination.presentationController?.delegate = self
+        nextVc.didDismissDelegate = self
         
         if segue.identifier == "editMotorcycle" {
             if let item = viewModel?.motorcycles?[self.tableView.indexPathForSelectedRow?.row ?? 0] {
-                nextVc.didDismissDelegate = self
                 nextVc.payloadId = item.objectId
             }
         }

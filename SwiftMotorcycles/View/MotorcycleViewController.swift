@@ -17,13 +17,21 @@ class MotorcycleViewController: UIViewController {
     var payloadId: String?
     var didDismissDelegate: DismissProtocol?
     
-    
     @IBOutlet weak var brandTextField: UITextField!
     @IBOutlet weak var modelTextField: UITextField!
     @IBOutlet weak var yearTextField: UITextField!
     
     @IBAction func saveButtonTapped(_ sender: Any) {
         guard let mc = viewModel?.motorcycle else {
+            return
+        }
+        
+        let isValid =
+            brandTextField.validate { v in return v.count >= 2 } &&
+            modelTextField.validate { v in return v.count >= 2 } &&
+            yearTextField.validate { v in return (1901...2099).contains(v.toIntOrZero()) }
+        
+        if (!isValid) {
             return
         }
 

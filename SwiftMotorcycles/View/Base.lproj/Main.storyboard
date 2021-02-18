@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Title-->
+        <!--Motorcycles-->
         <scene sceneID="NWW-uK-Vf0">
             <objects>
                 <tableViewController id="cQM-oJ-UfU" customClass="MotorcyclesViewController" customModule="Motorcycles" customModuleProvider="target" sceneMemberID="viewController">
@@ -41,7 +41,7 @@
                             <outlet property="delegate" destination="cQM-oJ-UfU" id="adu-sz-QMk"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Title" id="0ME-7G-zcl">
+                    <navigationItem key="navigationItem" title="Motorcycles" id="0ME-7G-zcl">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="YkD-u0-Q9X">
                             <connections>
                                 <segue destination="RhA-uu-Ns6" kind="presentation" identifier="addMotorcycle" id="dyr-q4-6om"/>

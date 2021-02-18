@@ -7,34 +7,36 @@
 //
 
 import Foundation
+import UIKit
 
-//// EditText
-//fun EditText.textAsString(): String {
-//    return this.text.toString()
-//}
-//
-//fun EditText.textAsInt(): Int {
-//    return this.textAsString().toIntOrNull() ?: 0
-//}
-//
-//fun EditText.setInt(value: Int, zeroIsBlank: Boolean = true) {
-//    if (zeroIsBlank && value == 0) {
-//        this.setText("")
-//        return
-//    }
-//    this.setText(value.toString())
-//}
-//
-//fun EditText.validate(validator: (String) -> Boolean, message: String): Boolean {
-//    this.doAfterTextChanged {
-//        this.error = if (validator(it.toString())) null else message
-//    }
-//    this.error = if (validator(this.text.toString())) null else message
-//
-//    return this.error == null
-//}
-//
-//// String
-//fun String.toIntOrZero(): Int {
-//    return this.toIntOrNull() ?: 0
-//}
+extension UITextField {
+    func validate(validator: (String) -> Bool) -> Bool {
+        let isValid = validator(self.text ?? "")
+        
+        if isValid {
+            self.rightViewMode = .never
+            self.rightView = nil
+        } else {
+            self.rightViewMode = .always
+            
+            let view = UIView(frame: CGRect(x: 0, y: 0, width: 12, height: 12))
+            
+            view.backgroundColor = UIColor.red
+            view.layer.cornerRadius = 6
+            
+            self.rightView = view
+        }
+        
+        return isValid
+    }
+}
+
+extension String {
+    func toIntOrZero() -> Int {
+        if let v = Int(self) {
+            return v
+        }
+        
+        return 0
+    }
+}
