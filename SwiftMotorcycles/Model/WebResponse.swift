@@ -12,3 +12,7 @@ struct WebResponse<T> {
     var success: Bool
     var data: T?
 }
+
+struct Empty: Decodable {
+    
+}

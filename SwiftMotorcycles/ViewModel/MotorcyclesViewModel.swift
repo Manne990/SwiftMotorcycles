@@ -50,6 +50,12 @@ class MotorcyclesViewModel : MotorcyclesViewModelProtocol {
     }
     
     func deleteMotorcycle(motorcycle: Motorcycle) {
-        
+        webService?.deleteMotorcycle(id: motorcycle.objectId, completion: { (result) in
+            guard result.success else {
+                return
+            }
+            
+            self.loadMotorcycles()
+        })
     }
 }

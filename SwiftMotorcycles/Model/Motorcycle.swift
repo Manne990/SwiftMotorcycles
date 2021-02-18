@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Motorcycle: Decodable {
+struct Motorcycle: Decodable, Encodable {
     public let objectId: String
     public let brand: String
     public let model: String

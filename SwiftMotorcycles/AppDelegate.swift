@@ -61,12 +61,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.container.register(MotorcyclesViewModelProtocol.self, factory: { resolver in
             return MotorcyclesViewModel(webService: resolver.resolve(WebServiceProtocol.self))
         })
+        
+        self.container.register(EditMotorcycleViewModelProtocol.self, factory: { resolver in
+            return EditMotorcycleViewModel(webService: resolver.resolve(WebServiceProtocol.self))
+        })
     }
     
     private func injectDependencies() {
         self.container.storyboardInitCompleted(MotorcyclesViewController.self) { (resolver, viewController) in
             viewController.viewModel = resolver.resolve(MotorcyclesViewModelProtocol.self)
         }
+        
+        self.container.storyboardInitCompleted(MotorcycleViewController.self) { (resolver, viewController) in
+            viewController.viewModel = resolver.resolve(EditMotorcycleViewModelProtocol.self)
+        }
     }
 }
-

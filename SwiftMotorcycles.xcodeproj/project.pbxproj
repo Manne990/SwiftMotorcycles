@@ -20,6 +20,8 @@
 		D01BBB9925D5858A00BD0A86 /* MotorcyclesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01BBB9825D5858A00BD0A86 /* MotorcyclesViewController.swift */; };
 		D0229EE125D5667E0044448B /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0229EE025D5667E0044448B /* Configuration.swift */; };
 		D0229EE725D567050044448B /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0229EE625D567050044448B /* WebService.swift */; };
+		D0BE851E25DEA3C800D13EB9 /* MotorcycleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BE851D25DEA3C800D13EB9 /* MotorcycleViewController.swift */; };
+		D0BE852325DEA75900D13EB9 /* EditMotorcycleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BE852225DEA75900D13EB9 /* EditMotorcycleViewModel.swift */; };
 		D0D3F0C125DE7A74002616EE /* MotorcyclesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01BBB8625D5795400BD0A86 /* MotorcyclesViewModel.swift */; };
 		D0D3F0CC25DE7A97002616EE /* WebResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9575089A22267A5D00BC905A /* WebResponse.swift */; };
 		D0D3F0D025DE7A9A002616EE /* Motorcycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957508982226799900BC905A /* Motorcycle.swift */; };
@@ -74,6 +76,8 @@
 		D01BBB9825D5858A00BD0A86 /* MotorcyclesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotorcyclesViewController.swift; sourceTree = "<group>"; };
 		D0229EE025D5667E0044448B /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		D0229EE625D567050044448B /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		D0BE851D25DEA3C800D13EB9 /* MotorcycleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotorcycleViewController.swift; sourceTree = "<group>"; };
+		D0BE852225DEA75900D13EB9 /* EditMotorcycleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMotorcycleViewModel.swift; sourceTree = "<group>"; };
 		D0D3F0DD25DE8180002616EE /* WebServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceMock.swift; sourceTree = "<group>"; };
 		D7AA7368D4E88C8E566CBB8A /* Pods-SwiftMotorcycles.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftMotorcycles.debug.xcconfig"; path = "Target Support Files/Pods-SwiftMotorcycles/Pods-SwiftMotorcycles.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -200,6 +204,7 @@
 			children = (
 				9575086C2226747E00BC905A /* Main.storyboard */,
 				D01BBB9825D5858A00BD0A86 /* MotorcyclesViewController.swift */,
+				D0BE851D25DEA3C800D13EB9 /* MotorcycleViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -216,6 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				D01BBB8625D5795400BD0A86 /* MotorcyclesViewModel.swift */,
+				D0BE852225DEA75900D13EB9 /* EditMotorcycleViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -487,10 +493,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9575089B22267A5D00BC905A /* WebResponse.swift in Sources */,
+				D0BE851E25DEA3C800D13EB9 /* MotorcycleViewController.swift in Sources */,
 				D0229EE725D567050044448B /* WebService.swift in Sources */,
 				D0229EE125D5667E0044448B /* Configuration.swift in Sources */,
 				D01BBB8725D5795400BD0A86 /* MotorcyclesViewModel.swift in Sources */,
 				D01BBB9925D5858A00BD0A86 /* MotorcyclesViewController.swift in Sources */,
+				D0BE852325DEA75900D13EB9 /* EditMotorcycleViewModel.swift in Sources */,
 				957508992226799900BC905A /* Motorcycle.swift in Sources */,
 				957508692226747E00BC905A /* AppDelegate.swift in Sources */,
 			);
