@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Combine
 
 protocol MotorcyclesViewModelProtocol {
     var propertyChanged: (String) -> Void {get set}
@@ -18,6 +19,8 @@ protocol MotorcyclesViewModelProtocol {
 
 class MotorcyclesViewModel : MotorcyclesViewModelProtocol {
     private let webService: WebServiceProtocol?
+    
+    private var subscriptions: Set<AnyCancellable> = []
     
     var propertyChanged: (String) -> Void = {propertyName in } // REMARK: Is this a good way to do it in Swift?
     
@@ -35,18 +38,36 @@ class MotorcyclesViewModel : MotorcyclesViewModelProtocol {
     }
     
     func loadMotorcycles() {
-        webService?.getMotorcycles{ (result) in
-            guard result.success else {
-                self.motorcycles = nil
-                return
-            }
-            
-            if let motorcycles = result.data {
-                self.motorcycles = motorcycles.sorted {
+        
+        webService?.getMotorcycles()
+            .subscribe(on: DispatchQueue.global())
+            .receive(on: DispatchQueue.main)
+            .sink(receiveCompletion: { completion in
+                if case let .failure(error) = completion {
+                    // error
+                }
+                else {
+                    // success
+                }
+            }, receiveValue: { items in
+                self.motorcycles = items.sorted {
                     $0.brand < $1.brand // TODO: Sort on more properties
                 }
-            }
-        }
+            })
+            .store(in: &subscriptions)
+        
+//        webService?.getMotorcycles{ (result) in
+//            guard result.success else {
+//                self.motorcycles = nil
+//                return
+//            }
+//
+//            if let motorcycles = result.data {
+//                self.motorcycles = motorcycles.sorted {
+//                    $0.brand < $1.brand // TODO: Sort on more properties
+//                }
+//            }
+//        }
     }
     
     func deleteMotorcycle(motorcycle: Motorcycle, completion: @escaping (Bool) -> Void) {

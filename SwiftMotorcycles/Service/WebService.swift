@@ -8,32 +8,69 @@
 
 import Foundation
 import Alamofire
+import Combine
+
+class CoreService {
+    static func request<T: Decodable, E: Error>(
+                url: String,
+                method: HTTPMethod,
+                parameters: Parameters?,
+                decoder: JSONDecoder = JSONDecoder(),
+                headers: HTTPHeaders? = nil
+            ) -> Future<T, E> {
+                return Future({ promise in
+                    AF.request(
+                        url,
+                        method: method,
+                        parameters: parameters,
+                        headers: headers
+                    ).responseDecodable(decoder: decoder, completionHandler: { (response: DataResponse<T, AFError>) in
+                        switch response.result {
+                            case .success(let value):
+                                promise(.success(value))
+                            case .failure(let error):
+                                promise(.failure(
+                                    NSError(domain: error.destinationURL?.absoluteString ?? "", code: error.responseCode ?? 0) as! E
+                                    )
+                            )
+                        }
+                    })
+                })
+            }
+}
 
 protocol WebServiceProtocol {
-    func getMotorcycles(completion: @escaping (WebResponse<[Motorcycle]>) -> Void)
+//    func getMotorcycles(completion: @escaping (WebResponse<[Motorcycle]>) -> Void)
+    func getMotorcycles() -> Future<[Motorcycle], Error>
     func getMotorcycle(id: String, completion: @escaping (WebResponse<Motorcycle>) -> Void)
     func deleteMotorcycle(id: String, completion: @escaping (WebResponse<Empty>) -> Void)
     func saveMotorcycle(motorcycle: Motorcycle, completion: @escaping (WebResponse<Empty>) -> Void)
 }
 
-class WebService : WebServiceProtocol {
-    func getMotorcycles(completion: @escaping (WebResponse<[Motorcycle]>) -> Void) {
-        var result = WebResponse<[Motorcycle]>(success: false, data: nil)
+class WebService : CoreService, WebServiceProtocol {
+    func getMotorcycles() -> Future<[Motorcycle], Error> {
+//        var result = WebResponse<[Motorcycle]>(success: false, data: nil)
         
-        AF
-            .request(allMotorcyclesUrl)
-            .validate()
-            .responseDecodable(of: [Motorcycle].self) { (response) in
-                guard let motorcycles = response.value else {
-                    completion(result)
-                    return
-                }
-                
-                result.success = true
-                result.data = motorcycles
-                
-                completion(result)
-            }
+        return CoreService.request(
+            url: allMotorcyclesUrl,
+            method: HTTPMethod.get,
+            parameters: nil
+        )
+        
+//        AF
+//            .request(allMotorcyclesUrl)
+//            .validate()
+//            .responseDecodable(of: [Motorcycle].self) { (response) in
+//                guard let motorcycles = response.value else {
+//                    completion(result)
+//                    return
+//                }
+//
+//                result.success = true
+//                result.data = motorcycles
+//
+//                completion(result)
+//            }
     }
     
     func getMotorcycle(id: String, completion: @escaping (WebResponse<Motorcycle>) -> Void) {
